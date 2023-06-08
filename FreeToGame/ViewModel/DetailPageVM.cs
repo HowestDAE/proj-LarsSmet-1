@@ -15,7 +15,7 @@ namespace FreeToGame.ViewModel
         {
             Id = 540,
             Title = "Overwatch",
-            Short_Description = "A hero-focused first-person team shooter from Blizzard Entertainment.",
+            Description = "A hero-focused first-person team shooter from Blizzard Entertainment.",
             Genre = "Shooter",
             Platform = "PC (Windows)"
 

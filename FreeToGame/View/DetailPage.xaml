@@ -23,7 +23,7 @@
             <TextBlock Text="{Binding CurrentGame.Title}" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
 
             <!-- Game Short Description -->
-            <TextBlock Text="{Binding CurrentGame.Short_Description}" TextWrapping="Wrap" Margin="0,0,0,10"/>
+            <TextBlock Text="{Binding CurrentGame.Description}" TextWrapping="Wrap" Margin="0,0,0,10"/>
 
             <!-- Game Details -->
             <TextBlock Text="Genre:" FontWeight="Bold"/>

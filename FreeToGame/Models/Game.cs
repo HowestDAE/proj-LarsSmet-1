@@ -10,13 +10,15 @@ namespace FreeToGame.Models
 {
     public class Game
     {
-        //[JsonProperty("title")]
+        [JsonProperty("id")]
         public int Id { get; set; }
+        [JsonProperty("title")]
         public string Title { get; set; }
-
-        public string Short_Description { get; set; }
-
+        [JsonProperty("short_description")]
+        public string Description { get; set; }
+        [JsonProperty("genre")]
         public string Genre { get; set; }
+        [JsonProperty("platform")]
         public string Platform { get; set; }
 
         public string Thumbnail
