@@ -44,7 +44,8 @@ namespace FreeToGame.ViewModel
             get { return _selectedGenre; }
             set
             {
-                Games = LocalRepository.GetGames(value);
+                var games = LocalRepository.GetGamesAsync(value);
+                Games = games.Result;
                 OnPropertyChanged(nameof(Games));
                 _selectedGenre = value;
             }
@@ -61,8 +62,10 @@ namespace FreeToGame.ViewModel
 
         public OverViewPageVM()
         {
-            GameGenres = LocalRepository.GetGameGenres();
-            Games = LocalRepository.GetGames();
+            var genres = LocalRepository.GetGameGenresAsync();
+            GameGenres = genres.Result;
+            var games = LocalRepository.GetGamesAsync();
+            Games = games.Result;
         }
 
 

@@ -14,7 +14,7 @@ namespace FreeToGame.Repository
     {
         private static List<Game> _games;
 
-        public static List<Game> GetGames()
+        public static async Task<List<Game>> GetGamesAsync()
         {
             if (_games != null)
             {
@@ -32,7 +32,7 @@ namespace FreeToGame.Repository
             {
                 using (var reader = new StreamReader(stream))
                 {
-                    json = reader.ReadToEnd();
+                    json = await reader.ReadToEndAsync();
                     _games = JsonConvert.DeserializeObject<List<Game>>(json);
                 }
             }
@@ -40,18 +40,18 @@ namespace FreeToGame.Repository
             return _games;
         }
 
-        public static List<string> GetGameGenres()
+        public static async Task<List<string>> GetGameGenresAsync()
         {
-            List<Game> games = GetGames();
+            List<Game> games = await GetGamesAsync();
 
             List<string> uniqueGenres = games.Select(game => game.Genre).Distinct().ToList();
 
             return uniqueGenres;
         }
 
-        public static List<Game> GetGames(string gameGenre)
+        public static async Task<List<Game>> GetGamesAsync(string gameGenre)
         {
-            List<Game> games = GetGames();
+            List<Game> games = await GetGamesAsync();
 
             List<Game> gamesOfGenre = new List<Game>();
             for (int i = 0; i < games.Count; i++)
