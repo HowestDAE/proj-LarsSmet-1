@@ -1,3 +1,5 @@
 Free game API
 https://www.freetogame.com/api/games
 This matches the game profile because the API is about free games.
+
+I wasn't able to start the consuming webservives part. But i would have made an interface repository and let local and online repository inherit from it.
