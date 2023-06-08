@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FreeToGame.Repository;
+using FreeToGame.Models;
 
 namespace FreeToGame
 {
@@ -23,6 +25,8 @@ namespace FreeToGame
         public MainWindow()
         {
             InitializeComponent();
+            List<Game> games =  LocalRepository.GetGames();
+
         }
     }
 }

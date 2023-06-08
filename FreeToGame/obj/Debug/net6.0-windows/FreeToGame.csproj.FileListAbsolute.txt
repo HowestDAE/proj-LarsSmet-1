@@ -19,3 +19,10 @@ C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\re
 C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\FreeToGame.pdb
 C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\FreeToGame.genruntimeconfig.cache
 C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\ref\FreeToGame.dll
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\View\DetailPage.g.cs
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\View\OverView.g.cs
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\View\DetailPage.baml
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\View\OverView.baml
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\FreeToGame.csproj.CopyComplete

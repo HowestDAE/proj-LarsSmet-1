@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BY5XU8gwIAlYFFc6H8pLtsyrL7Wj1FqB4DjvArGTOrHNQKrI1DBoD25rANBy3qBXETSD2ExsqgHcFEchq3NBdA==",
+  "dgSpecHash": "te2romUz7RfeH2qAXtGbSjodq1DPmExBnHhUA90EBE4dRbN6fisXiwi8fRq2CNu/Vvx0WFYQiXw2gghynp4QFQ==",
   "success": true,
   "projectFilePath": "C:\\ToolDev2023ExamPrep\\C#\\proj-LarsSmet-1\\FreeToGame\\FreeToGame.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\larss\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
+    "C:\\Users\\larss\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
