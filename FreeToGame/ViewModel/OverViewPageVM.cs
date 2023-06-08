@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using FreeToGame.Models;
+using FreeToGame.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,24 +13,36 @@ namespace FreeToGame.ViewModel
     public class OverViewPageVM : ObservableObject
     {
 
-        private Game _currentGame = new Game()
-        {
-            Id = 540,
-            Title = "Overwatch",
-            Short_Description = "A hero-focused first-person team shooter from Blizzard Entertainment.",
-            Genre = "Shooter",
-            Platform = "PC (Windows)"
+        public List<string> GameGenres { get; set; }
+        public List<Game> Games { get; set; }
 
-        };
+        private string _selectedGenre;
 
-        public Game CurrentGame
+        public string SelectedGenre
         {
-            get => _currentGame;
+            get { return _selectedGenre; }
             set
             {
-                _currentGame = value;
-                OnPropertyChanged(nameof(CurrentGame));
+                Games = LocalRepository.GetGames(value);
+                OnPropertyChanged(nameof(Games));
+
+                _selectedGenre = value;
             }
+        }
+
+        private Game _selectedGame;
+
+        public Game SelectedGame
+        {
+            get { return _selectedGame; }
+            set { _selectedGame = value; }
+        }
+
+
+        public OverViewPageVM()
+        {
+            GameGenres = LocalRepository.GetGameGenres();
+            Games = LocalRepository.GetGames();
         }
 
 

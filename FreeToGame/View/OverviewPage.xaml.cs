@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace FreeToGame.View
 {
     /// <summary>
-    /// Interaction logic for OverView.xaml
+    /// Interaction logic for OverviewPage.xaml
     /// </summary>
-    public partial class OverView : Page
+    public partial class OverviewPage : Page
     {
-        public OverView()
+        public OverviewPage()
         {
             InitializeComponent();
         }
