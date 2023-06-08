@@ -26,3 +26,4 @@ C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\Vi
 C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\FreeToGame.csproj.CopyComplete
 C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\View\OverviewPage.g.cs
 C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\View\OverviewPage.baml
+C:\ToolDev2023ExamPrep\C#\proj-LarsSmet-1\FreeToGame\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
