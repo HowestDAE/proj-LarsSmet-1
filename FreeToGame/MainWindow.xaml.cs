@@ -25,7 +25,7 @@ namespace FreeToGame
         public MainWindow()
         {
             InitializeComponent();
-            List<Game> games =  LocalRepository.GetGames();
+    
 
         }
     }

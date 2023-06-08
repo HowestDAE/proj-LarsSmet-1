@@ -62,7 +62,7 @@ namespace FreeToGame.Repository
                 }
             }
 
-            return games;
+            return gamesOfGenre;
         }
 
     }

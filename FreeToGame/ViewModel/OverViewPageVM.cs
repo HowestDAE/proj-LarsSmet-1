@@ -12,9 +12,30 @@ namespace FreeToGame.ViewModel
 {
     public class OverViewPageVM : ObservableObject
     {
+        private List<string> _gameGenres { get; set; }
+        public List<string> GameGenres
+        {
+            get {return _gameGenres;}
 
-        public List<string> GameGenres { get; set; }
-        public List<Game> Games { get; set; }
+            set
+            {
+                _gameGenres = value;
+                OnPropertyChanged(nameof(_gameGenres));
+            }
+            
+        }
+
+        private List<Game> _games = new List<Game>();
+
+        public List<Game> Games
+        {
+            get {return _games;}
+            set
+            {
+                _games = value;
+                OnPropertyChanged(nameof(Games));
+            }
+        }
 
         private string _selectedGenre;
 
@@ -25,7 +46,6 @@ namespace FreeToGame.ViewModel
             {
                 Games = LocalRepository.GetGames(value);
                 OnPropertyChanged(nameof(Games));
-
                 _selectedGenre = value;
             }
         }

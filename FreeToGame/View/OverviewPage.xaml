@@ -7,15 +7,14 @@
    xmlns:viewmodel="clr-namespace:FreeToGame.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="OverviewPage">
+      Title="OverviewPage"
+      Background="Blue">
 
     <Page.DataContext>
         <viewmodel:OverViewPageVM/>
     </Page.DataContext>
 
-    <!--<Page.Resources>
-        <converters:TypeToIconConverter x:Key="ToIcon"/>
-    </Page.Resources>-->
+
 
     <Grid>
         <Grid.RowDefinitions>
@@ -23,7 +22,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <ComboBox ItemsSource="{Binding GameGenre}" SelectedItem="{Binding SelectedGenre}"/>
+        <ComboBox ItemsSource="{Binding GameGenres}" SelectedItem="{Binding SelectedGenre}"/>
 
         <ListBox Grid.Row="1" Foreground="White" Background="Transparent" ItemsSource="{Binding Games}" SelectedItem="{Binding SelectedGame}" HorizontalAlignment="Stretch"
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
@@ -37,11 +36,11 @@
             </ListBox.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Width="200">
-                        <!-- should contain type icon image when binding -->
-                        <Image Source="{Binding Thumbnail}" Height="20" Width="20" Margin="4"/>
-                        <!-- binding needed -->
-                        <TextBlock Text="{Binding Name}" Margin="10,0" Foreground="White" VerticalAlignment="Center" FontSize="51"/>
+                    <StackPanel Orientation="Horizontal" Width="300">
+
+                        <Image Source="{Binding Thumbnail}" Height="100" Width="100" Margin="4"/>
+
+                        <TextBlock Text="{Binding Title}" Margin="10,0" Foreground="Black" VerticalAlignment="Center" FontSize="11" Width="140" Background="Red" Height="24"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
